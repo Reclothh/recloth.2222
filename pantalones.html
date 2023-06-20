@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/styile.css" />
+    <link rel="icon" type="image/png" href="imagenes/favicon.png" />
+    <title>Recloth</title>
+  </head>
+  <body>
+    <header
+      class="header-pantalon"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+          url(imagenes/ganga.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+      "
+    >
+      <div>
+        <div class="search-container">
+          <a href="index.html" class="none-sub2">
+            <p class="additional-text">RECLOTH</p>
+          </a>
+          <div class="search-second-container">
+            <ul class="nav">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="pantalones.html">Productos</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <form id="search-form">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Buscar por nombre"
+              />
+              <button type="submit">Buscar</button>
+            </form>
+            <!-- Carrito de compras -->
+            <!-- Carrito de compras -->
+            <div class="container-icon">
+              <div class="container-cart-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon-cart"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                  />
+                </svg>
+                <div class="count-products">
+                  <span id="contador-productos">0</span>
+                </div>
+              </div>
+
+              <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                  <div class="cart-product">
+                    <div class="info-cart-product">
+                      <span class="cantidad-producto-carrito"></span>
+                      <p class="titulo-producto-carrito"></p>
+                      <span class="precio-producto-carrito"></span>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="icon-close"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="cart-total hidden">
+                  <h3>Total:</h3>
+                  <span class="total-pagar">$0</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+              </div>
+            </div>
+            <!-- Fin del carrito de compras -->
+          </div>
+        </div>
+        <div id="particle-container">
+          <p class="tok neon-text">Pantalones.</p>
+        </div>
+
+        <p class="tok"><span class="bright-word">Pantalones.</span></p>
+      </div>
+    </header>
+
+    <section class="products-section">
+      <div class="container2">
+        <div class="filter">
+          <h2>Filtrar por:</h2>
+          <ul>
+            <li><a href="todos.html">Todos los productos</a></li>
+            <li><a href="remeras.html">Remeras</a></li>
+            <li><a href="pantalones.html">Pantalones</a></li>
+            <li><a href="buzos.html">Buzos</a></li>
+            <li><a href="accesorios.html">Accesorios</a></li>
+          </ul>
+        </div>
+        <div class="carousel-container">
+          <div class="container-items products">
+            <div class="product0">
+              <img src="imagenes/pantalones/1.jpg" alt="PRODUCTO_NOMBRE1" />
+              <div class="info-product">
+                <h2>Pantalon Xtreme</h2>
+                <p class="price">$12000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="product0">
+              <img src="imagenes/pantalones/2.jpg" alt="PRODUCTO_NOMBRE1" />
+              <div class="info-product">
+                <h2>Pantalon Mirror</h2>
+                <p class="price">$15000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="product0">
+              <img src="imagenes/pantalones/3.jpg" alt="PRODUCTO_NOMBRE1" />
+              <div class="info-product">
+                <h2>Pantalon Bad vibes</h2>
+                <p class="price">$14000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="product0">
+              <img src="imagenes/pantalones/4.jpg" alt="PRODUCTO_NOMBRE1" />
+              <div class="info-product">
+                <h2>Pantalon Meng</h2>
+                <p class="price">$12000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="product0">
+              <img src="imagenes/pantalones/5.jpg" alt="PRODUCTO_NOMBRE1" />
+              <div class="info-product">
+                <h2>Pantalon Dune</h2>
+                <p class="price">$12000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="product0">
+              <img src="imagenes/pantalones/6.jpg" alt="PRODUCTO_NOMBRE1" />
+              <div class="info-product">
+                <h2>Pantalon Parch</h2>
+                <p class="price">$14000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="https://instagram.com/recloth___?igshid=NTc4MTIwNjQ2YQ=="
+        target="_blank"
+        class="none-sub"
+      >
+        <section class="image-section2">
+          <h2>@recloth</h2>
+          <div class="responsive-pictures">
+            <div class="image-container2">
+              <img src="imagenes/bolo.jpg" alt="Imagen 1" />
+              <div
+                class="overlay"
+                style="
+                  background: url(imagenes/instagram.png) center center/45px
+                    45px no-repeat;
+                "
+              >
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+            <div class="image-container2">
+              <img src="imagenes/bici.jpg" alt="Imagen 2" />
+              <div
+                class="overlay"
+                style="
+                  background: url(imagenes/instagram.png) center center/45px
+                    45px no-repeat;
+                "
+              >
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+            <div class="image-container2">
+              <img src="imagenes/ganggg.jpg" alt="Imagen 3" />
+              <div
+                class="overlay"
+                style="
+                  background: url(imagenes/instagram.png) center center/45px
+                    45px no-repeat;
+                "
+              >
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+            <div class="image-container2">
+              <img src="imagenes/relll.jpg" alt="Imagen 4" />
+              <div
+                class="overlay"
+                style="
+                  background: url(imagenes/instagram.png) center center/45px
+                    45px no-repeat;
+                "
+              >
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+            <div class="image-container2">
+              <img src="imagenes/bmm.jpg" alt="Imagen 5" />
+              <div
+                class="overlay"
+                style="
+                  background: url(imagenes/instagram.png) center center/45px
+                    45px no-repeat;
+                "
+              >
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+            <div class="image-container2">
+              <img src="imagenes/duo.jpg" alt="Imagen 6" />
+              <div
+                class="overlay"
+                style="
+                  background: url(imagenes/instagram.png) center center/45px
+                    45px no-repeat;
+                "
+              >
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h2 class="footer-section-title">Soporte</h2>
+          <ul class="footer-section-list">
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Política de devoluciones</a></li>
+            <li><a href="#">Consignación de usados</a></li>
+            <li><a href="#">Imagenes extraidas de Pinterest</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h2 class="footer-section-title">Contacto</h2>
+          <ul class="footer-section-list">
+            <li>
+              <a href="mailto:SupportRecloth@gmail.com"
+                >SupportRecloth@gmail.com</a
+              >
+            </li>
+            <li><a href="tel:+541173639395">11 7363-9395</a></li>
+            <li>
+              <a
+                href="https://instagram.com/recloth___?igshid=NTc4MTIwNjQ2YQ=="
+                target="_blank"
+                >@recloth___</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h2 class="footer-section-title">¿Por qué Recloth?</h2>
+          <ul class="footer-section-list">
+            <li>Variedad de productos exclusivos</li>
+            <li>Envíos a todo el país</li>
+            <li>Sitio seguro</li>
+            <li>Garantía de calidad</li>
+            <li>Métodos de pago</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h2 class="footer-section-title">Newsletter Semanal</h2>
+          <p class="footer-newsletter-text">Subscríbete!</p>
+          <form class="footer-newsletter-form">
+            <input type="email" placeholder="Ingresa tu correo electrónico" />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Empresa. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="prueba.js"></script>
+  </body>
+</html>

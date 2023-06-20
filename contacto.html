@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilos/styile.css" />
+  <link rel="icon" type="image/png" href="imagenes/favicon.png" />
+  <title>Recloth - Contacto</title>
+</head>
+
+<body>
+  <header class="contact-header">
+    <div>
+      <div class="search-container">
+        <a href="index.html" class="none-sub2">
+          <p class="additional-text">RECLOTH</p>
+        </a>
+        <div class="search-second-container">
+          <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="todos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+          <form id="search-form">
+            <input type="text" id="search-input" placeholder="Buscar por nombre" />
+            <button type="submit">Buscar</button>
+          </form>
+          <!-- Carrito de compras -->
+          <div class="container-icon">
+            <div class="container-cart-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+              <div class="count-products">
+                <span id="contador-productos">0</span>
+              </div>
+            </div>
+          </div>
+          <!-- Fin del carrito de compras -->
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <div class="container-cart-products hidden-cart">
+    <div class="row-product hidden">
+      <div class="cart-product">
+        <div class="info-cart-product">
+          <span class="cantidad-producto-carrito">1</span>
+          <p class="titulo-producto-carrito">Zapatos Nike</p>
+          <span class="precio-producto-carrito">$0</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="cart-total hidden">
+      <h3>Total:</h3>
+      <span class="total-pagar">$200</span>
+    </div>
+    <p class="cart-empty"> El carrito está vacío</p>
+  </div>
+
+
+  <section class="contact-section" style="
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+          url(imagenes/supreme.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+      ">
+    <div class="contact-container" style="
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+            url(imagenes/contactoo.jpg) no-repeat center;
+          background-size: auto;
+          background-attachment: fixed;
+        ">
+      <h2 class="recontacto">RECLOTH</h2>
+      <h1 class="contact-title titilante">Contacto</h1>
+      <form class="contact-form" onsubmit="return validateForm()">
+        <div class="contact-form-group">
+          <label for="name" class="contact-label">Nombre:</label>
+          <input type="text" id="name" class="contact-input" placeholder="Ingrese su nombre" maxlength="50" required />
+          <div id="name-error" class="error-message"></div>
+        </div>
+        <div class="contact-form-group">
+          <label for="email" class="contact-label">Correo electrónico:</label>
+          <input type="email" id="email" class="contact-input" placeholder="Ingrese su correo electrónico" required />
+          <div id="email-error" class="error-message"></div>
+        </div>
+        <div class="contact-form-group">
+          <label for="message" class="contact-label">Mensaje:</label>
+          <textarea id="message" class="contact-input" placeholder="Ingrese su mensaje" required></textarea>
+          <div id="message-error" class="error-message"></div>
+        </div>
+        <button type="submit" class="contact-submit-button">Enviar</button>
+        <div id="success-message" class="success-message"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2 class="footer-section-title">Soporte</h2>
+        <ul class="footer-section-list">
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de devoluciones</a></li>
+          <li><a href="#">Consignación de usados</a></li>
+          <li><a href="#">Imagenes extraidas de Pinterest</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2 class="footer-section-title">Contacto</h2>
+        <ul class="footer-section-list">
+          <li>
+            <a href="mailto:SupportRecloth@gmail.com">SupportRecloth@gmail.com</a>
+          </li>
+          <li><a href="tel:+541173639395">11 7363-9395</a></li>
+          <li>
+            <a href="https://instagram.com/recloth___?igshid=NTc4MTIwNjQ2YQ==" target="_blank">@recloth___</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2 class="footer-section-title">¿Por qué Recloth?</h2>
+        <ul class="footer-section-list">
+          <li>Variedad de productos exclusivos</li>
+          <li>Envíos a todo el país</li>
+          <li>Sitio seguro</li>
+          <li>Garantía de calidad</li>
+          <li>Métodos de pago</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2 class="footer-section-title">Newsletter Semanal</h2>
+        <p class="footer-newsletter-text">Subscríbete!</p>
+        <form class="footer-newsletter-form">
+          <input type="email" placeholder="Ingresa tu correo electrónico" />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Empresa. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="new.js"></script>
+</body>
+
+</html>
